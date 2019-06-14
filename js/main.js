@@ -4,7 +4,7 @@ var stateActions = { preload: preload, create: create, update: update };
 // Phaser parameters:
 // - game width
 // - game height
-// - renderer (go for Phaser.AUTO)
+// - renderer
 // - element where the game will be drawn ('game')
 // - actions on the game state (or null for nothing)
 var game = new Phaser.Game(790, 400, Phaser.CANVAS, 'game', stateActions);
@@ -24,7 +24,10 @@ function create()
     game.stage.setBackgroundColor("#66ffff");
 }
 
+/*
+ * Updates state of game. Called many times per second.
+ */
 function update()
 {
-    
+
 }
